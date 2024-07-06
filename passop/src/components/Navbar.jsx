@@ -2,28 +2,33 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    
-      <nav className='bg-slate-800 text-white '>
-        <div className='mycontainer flex justify-between items-center px-4 py-5 h-18'>
+
+    <nav className='bg-slate-800 text-white '>
+      <div className='mycontainer flex justify-between items-center px-4 py-5 h-16'>
         <div className="logo font-bold text-white text-2xl">
-        <span className='text-green-700 '>&lt;
-            </span>
-              Pass
-        <span className='text-green-700'>OP/&gt;</span>
-            
+          <span className='text-green-700 '>&lt;
+          </span>
+          Pass
+          <span className='text-green-700'>OP/&gt;</span>
+
         </div>
 
-        <ul>
+        {/* <ul>
             <li className='flex gap-16'>
                 <a className='hover:font-bold'href='/'>Home</a>
                 <a className='hover:font-bold'href='#'>About</a>
                 <a className='hover:font-bold'href='#'>Contact</a>
 
             </li>
-        </ul>
-        </div>
-      </nav>
-    
+        </ul>*/}
+        <button className='text-white bg-green-700 my-5 rounded-full flex justify-between items-center ring-white ring-1'>
+          <img className='invert p-1 w-10' src="githubicon.svg" alt="github logo" />
+          <span className='font-bold px-2'>Github</span>
+
+        </button>
+      </div>
+    </nav>
+
   )
 }
 
